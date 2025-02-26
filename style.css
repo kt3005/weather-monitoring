@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* for class . and for tag normal name and for id we use #*/
+body {
+    background-image: url('images/bg2.jpg');    /* main page background*/
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: top center; 
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    min-height: 100%;
+    display: flex;   /*website structure gets ruined if i remove this*/
+    flex-direction: column; /*same as above*/
+}
+
+nav{           /*header*/
+    width: 100%;height: 10vh;
+    background: rgba(0,0,0,0.8);
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+nav .logo{       /*polther logo shifting*/
+    width:20%;
+    text-align: center;
+}
+
+nav .menu{   /* poll,overall,contact */
+    width:40%;
+    display:flex;
+    justify-content: space-around;
+}
+
+nav .menu a{     /* poll,overall,contact text */
+    font-weight: bold;
+    text-decoration: none;
+    color:#fff;
+}
+
+.pollution {    /*if button is to be made of the links*/
+    background-color: orangered;
+    border: 2px solid black;
+    color:#fff;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin: 5px 5px;
+    cursor: pointer;
+    position: relative;
+    left: 0%;
+    padding: 5px;
+    right:20%;
+    bottom:98%;
+    top:2%;
+    border-radius: 20px;
+}
+
+.container h1{     /* live timer*/
+    position:absolute;
+    top:95%;
+    bottom:0%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color: darkgray;
+    font-size:30px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.app-main {       /* big box colour*/
+    width: 50vh;
+    margin: 70px auto;
+    background-color:pink; /*rgba(240,248,255, 0.6); */ 
+    padding: 15px;
+    text-align: center;
+}
+
+.app-main > * {
+    margin-bottom: 20px;
+}
+
+.input-box {   
+    width: 100%;
+    background-color:  rgba(255,255,255,0.6);    /*small box colour*/
+    border: none;
+    outline: none;
+    color: #582233;     /* text colour */
+    font-size: 1.2rem;
+    height: 50px;
+    border-radius: 5px;  /*input box rounded*/
+    padding: 0 10px;
+    text-align: center;
+}    
+
+.input-box:focus {
+    background-color: rgba(255,255,255);         /* small box colour */
+}
+
+
+.weather-body {
+    display: none;
+    color: #582233;
+    padding: 20px;
+    line-height: 2rem;
+    border-radius: 10px;
+    background-color:/* darkgrey*/rgba(255,255,255,0.6);
+    height: 50vh;
+}
+
+.location-details {
+    font-weight: bold;
+}
+
+.weather-status {  /* box detail text color*/
+    padding: 20px;
+   /* color:blue; */
+}
+
+.temp {
+    font-size: 50pt;
+    font-weight: 700;
+    margin: 20px 0;
+    text-shadow: 2px 4px rgba(0,0,0,0.3);
+}
+
+.min-max, .weather {
+    font-size: 12pt;
+    font-weight: 600;
+}
